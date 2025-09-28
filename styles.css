@@ -314,12 +314,39 @@ button {
 footer {
     background-color:black;
     border-radius: 25px;
+    height: 350px;
  }
 
 /* FORMULAIRE DE CONTACT */
 .contact_container {
     display: flex;
     justify-content: center;
+    gap: 80px;
+}
+
+label {
+  color: white;
+  font-family: 'Monument Extended Regular';
+  font-size: 12px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  width: 200px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+form {
+  margin: 20px;
+  button{height: 30px;}
+  
 }
 
 @media (max-width: 767px) {
@@ -333,7 +360,7 @@ footer {
     .layout_x3 {flex-direction: column; gap: 40px;}
     .summary {flex-direction: column; justify-content: center;}
     .button_sum {text-align: center;}
-    .download_cv, .contact_button {font-size: 8px;}
+    .download_cv, .contact_button {font-size: 12px;}
     .about_container {flex-direction: column; justify-content: center;}
     .avatar_ia {height: 400px; width: 300px; margin-left: 20%; margin-right: 20%;}
     .about {width: 80%; text-align: center; margin: 0% 5% 0% 5%;}
@@ -343,9 +370,11 @@ footer {
     h3.title {font-size: 2vh;}
     .school {font-size: 2vh;}
     footer{
+      height: 600px;
       h3 {font-size: 3vh; margin: 0px;}
       p{font-size: 1.3vh;}
       .logo_ck_2 {height: 150px;}
+      .contact_container{flex-direction: column; justify-content: center; margin-left: 5%; margin-right: 5%; text-align: center;}
     }
 
 }

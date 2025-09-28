@@ -138,13 +138,30 @@
             
             <footer>
                 <div class="contact_container">
-                        <img src="source/logo_ck.svg" alt="logo_ck" class="logo_ck_2" style="width: 200px;">
                         <div class="contact_infos">
                             <h3 style="color: aquamarine;">Ceylian<br>Kirchhoffer</h3>
                             <p>+33 6 58 93 31 43</p>
                             <p>ceylian@kirchhoffer.fr</p>
                             <p>1 Rue des 3 Épis</p>
                             <p>94370, Sucy-en-Brie</p>
+                        </div>
+                        <div>
+                            <form action="https://formspree.io/f/mpwyqevr" method="POST">
+                                <label for="nom">Nom :</label><br>
+                                <input type="text" name="nom" required><br>
+
+                                <label for="email">Email :</label><br>
+                                <input type="email" name="email" required><br>
+
+                                <label for="object">Object :</label><br>
+                                <input type="text" name="object" required><br>
+
+                                <label for="message">Message :</label><br>
+                                <textarea name="message" rows="5" required></textarea><br>
+
+                                <br><button type="submit">Envoyer</button>
+                            </form>
+
                         </div>
                 </div>
             </footer>
